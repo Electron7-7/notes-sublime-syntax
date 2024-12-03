@@ -1,2 +1,2 @@
 # notes-sublime-syntax
-Sublime Text syntax for a custom filetype dedicated to taking notes
+Sublime Text syntax for a custom filetype dedicated to taking notes. Initially, this was just a way to use some functionalities from other syntaxes (i.e: automatic indentation, header colors/boldness, etc) while taking notes to make that process a little faster. Now, I can actually see it being a little more and possibly even a feature-complete syntax for note-taking with custom coloring, syntax rules (like indentation and lists and such), and maybe more!
