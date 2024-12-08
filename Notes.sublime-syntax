@@ -1,1 +1,23 @@
-/home/thelegend27/.config/sublime-text/Packages/User/Notes.sublime-syntax
+%YAML 1.2
+---
+name: Notes
+file_extensions:
+  - nt
+  - nts
+scope: text.notes
+version: 2
+
+contexts:
+  main:
+    - match: ^\[(\d+\/?){3}\]
+      scope: markup.underline
+    - match: ^--\s.+$
+      scope: markup.bold
+    - match: '^(:::[Cc]\+\+)\n'
+      captures:
+        1: entity.name.tag
+      embed: scope:source.c++
+      embed_scope: markup.raw.block
+      escape: '^(:::)'
+      escape_captures:
+        0: entity.name.tag
